@@ -89,7 +89,6 @@ return [
     | quickly generating a very large amount of password reset tokens.
     |
     */
-
     'passwords' => [
         'users' => [
             'provider' => 'users',
@@ -98,7 +97,6 @@ return [
             'throttle' => 60,
         ],
     ],
-
     /*
     |--------------------------------------------------------------------------
     | Password Confirmation Timeout
@@ -109,7 +107,5 @@ return [
     | confirmation screen. By default, the timeout lasts for three hours.
     |
     */
-
     'password_timeout' => env('AUTH_PASSWORD_TIMEOUT', 10800),
-
 ];

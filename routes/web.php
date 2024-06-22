@@ -2,6 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use  App\Http\Controllers\UserController;
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/',[UserController::class,'getAllUser']);
+Route::post('save',[UserController::class,'saveUser']);
+Route::post('delete',[UserController::class,'deleteUser']);
