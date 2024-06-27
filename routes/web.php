@@ -11,3 +11,4 @@ use  App\Http\Controllers\UserController;
 Route::get('/',[UserController::class,'getAllUser']);
 Route::post('save',[UserController::class,'saveUser']);
 Route::post('delete',[UserController::class,'deleteUser']);
+Route::post('edit',[UserController::class,'editUser']);
